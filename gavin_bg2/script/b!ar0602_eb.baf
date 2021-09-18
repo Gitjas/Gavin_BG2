@@ -14,7 +14,8 @@ THEN
 END 
 
 IF 
-    HasItem("B!PCRING",Player1) 
+//    HasItem("B!PCRING",Player1) 
+    PartyHasItem("B!PCRING") 
     Global("B!GavRingPlaced","GLOBAL",2) 
     !StateCheck(Player1,CD_STATE_NOTVALID) 
     !See([ENEMY]) 
